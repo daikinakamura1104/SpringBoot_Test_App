@@ -1,45 +1,45 @@
-// package com.example.test.app.inquiry;
+package com.example.test.app.inquiry;
 
-// public class InquiryForm {
-//     private String name;
-//     private String email;
-//     private String text;
+public class InquiryForm {
+    private String name;
+    private String email;
+    private String text;
 
-//     public InquiryForm(String name, String email, String text) {
-//         this.setName(name);
-//         this.setEmail(email);
-//         this.setText(text);
-//     }
-
-
-//     public String getName() {
-//         return name;
-//     }
+    public InquiryForm(String name, String email, String text) {
+        this.setName(name);
+        this.setEmail(email);
+        this.setText(text);
+    }
 
 
-//     public void setName(String name) {
-//         this.name = name;
-//     }
+    public String getName() {
+        return name;
+    }
 
-//     public String getEmail(){
-//         return email;
-//     }
 
-//     public void setEmail(String email){
-//         this.email = email;
-//     }
+    public void setName(String name) {
+        this.name = name;
+    }
 
-//     public String getText(){
-//         return text;
-//     }
+    public String getEmail(){
+        return email;
+    }
 
-//     public void setText(String text){
-//         this.text = text;
-//     }
+    public void setEmail(String email){
+        this.email = email;
+    }
 
-//     public InquiryForm() {
-//       this("", "", "");
-//     }
+    public String getText(){
+        return text;
+    }
+
+    public void setText(String text){
+        this.text = text;
+    }
+
+    public InquiryForm() {
+      this("", "", "");
+    }
    
-// }
+}
   

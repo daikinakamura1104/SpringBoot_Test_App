@@ -1,7 +1,7 @@
-// package com.example.test.domain.service;
+package com.example.test.domain.service;
 
-// import com.example.test.domain.entity.Inquiry;
+import com.example.test.domain.entity.Inquiry;
 
-// public interface InquiryService {
-//     void save(Inquiry inquiry);
-// }
+public interface InquiryService {
+    void save(Inquiry inquiry);
+}

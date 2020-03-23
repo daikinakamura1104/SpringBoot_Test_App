@@ -1,9 +1,9 @@
-// package com.example.test.domain.dao;
+package com.example.test.domain.dao;
 
-// import com.example.test.domain.entity.Inquiry;
-// import org.springframework.stereotype.Component;
+import com.example.test.domain.entity.Inquiry;
+import org.springframework.stereotype.Component;
 
-// @Component
-// public interface InquiryDao {
-//     void create(Inquiry inquiry);
-// }
+@Component
+public interface InquiryDao {
+    void create(Inquiry inquiry);
+}
