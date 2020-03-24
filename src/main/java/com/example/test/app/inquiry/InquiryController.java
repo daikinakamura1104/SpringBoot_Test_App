@@ -1,8 +1,11 @@
 package com.example.test.app.inquiry;
 
+import java.util.List;
+import java.util.Map;
 import com.example.test.domain.entity.Inquiry;
 import com.example.test.domain.service.InquiryService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -11,6 +14,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+
 
 @Controller
 @RequestMapping("/inquiry")
@@ -38,5 +42,18 @@ public class InquiryController {
     Inquiry inquiry = new Inquiry(inquiryForm.getName(), inquiryForm.getEmail(),inquiryForm.getText());
     service.save(inquiry);
     return "complete";
-  }
+    }
+
+    @Autowired
+    JdbcTemplate jdbcTemplate;
+
+    @RequestMapping("/list")
+    public String list(Model model){
+        List<Map<String,Object>> list;
+        list = jdbcTemplate.queryForList("select * from inquiry");
+        model.addAttribute("list", list);
+        return "list";
+    }
+
+
 }

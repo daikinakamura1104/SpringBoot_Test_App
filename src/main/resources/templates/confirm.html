@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 </head>
 <body>
+    <h2>送信内容確認画面</h2>
     <form method="post" action="#" th:action="@{/inquiry/save}" th:object="${inquiryForm}">
         お名前:<input type="text" name="name" th:value="*{name}"><br>
         email:<input type="text" name="email" th:value="*{email}"><br>

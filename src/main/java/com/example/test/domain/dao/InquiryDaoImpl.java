@@ -1,7 +1,6 @@
 package com.example.test.domain.dao;
 
 import com.example.test.domain.entity.Inquiry;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
