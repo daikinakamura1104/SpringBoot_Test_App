@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Error Page</title>
+</head>
+<body>
+    <h1>システム問題発生</h1>
+    <h2 th:text="${status} + ' ' + ${error}">500 Internal Server Error</h2>
+    <a th:href="@{/}">問い合わせ入力画面へ移動</a>
+</body>
