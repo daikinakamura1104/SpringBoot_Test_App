@@ -1,0 +1,36 @@
+/* コンテンツサイズ */
+.form-group{
+    padding: 100px;
+}
+
+.confirm-filed{
+    padding: 200px;
+}
+
+.complete-filed{
+    padding: 200px;
+}
+
+.list-table{
+    margin-top: 40px;
+    padding: 120px;
+}
+
+/* 詳細 */
+.tag{
+    color: red;
+}
+
+.btn-input{
+    margin-top: 20px;
+}
+
+.list-title{
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.list-button{
+    margin-left: 80px;
+    margin-bottom: 40px;
+}
