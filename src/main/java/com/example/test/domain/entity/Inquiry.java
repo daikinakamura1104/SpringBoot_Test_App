@@ -6,6 +6,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 // @Table(name="")で定義するが、省略する場合はクラス名がテーブルの名前になる
+// Bean
 public class Inquiry {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

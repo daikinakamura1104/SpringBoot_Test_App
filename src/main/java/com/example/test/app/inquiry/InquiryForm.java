@@ -1,5 +1,6 @@
 package com.example.test.app.inquiry;
 
+// Bean
 public class InquiryForm {
     private String name;
     private String email;
