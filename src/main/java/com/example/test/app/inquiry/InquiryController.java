@@ -52,7 +52,7 @@ public class InquiryController {
     @Autowired
     JdbcTemplate jdbcTemplate;
 
-    @RequestMapping("/list")
+    @GetMapping("/list")
     public String list(Model model){
         List<Map<String,Object>> list;
         list = jdbcTemplate.queryForList("select * from inquiry");

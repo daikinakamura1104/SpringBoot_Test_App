@@ -18,7 +18,7 @@ public class InquiryDaoImplTests{
     @Mock
     Inquiry inquiry;
     @Test
-    public void Mockを利用したデータベースインサートテスト() throws Exception{
+    public void createTest() throws Exception{
         jdbcTemplate.update("INSERT INTO inquiry (name, email, text) VALUES (?, ?, ?)", inquiry.getName(),
                 inquiry.getEmail(), inquiry.getText());
     }
