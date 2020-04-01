@@ -1,25 +1,30 @@
 package com.example.test.domain.dao;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import com.example.test.domain.entity.Inquiry;
-
+import com.example.test.domain.service.InquiryServiceImpl;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-@RunWith(MockitoJUnitRunner.class)
+@RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
-public class InquiryDaoImplTests{
-    @InjectMocks
-    JdbcTemplate jdbcTemplate;
-    @Mock
-    Inquiry inquiry;
+public class InquiryDaoImplTests {
+
+    @Autowired
+    private InquiryServiceImpl inquiryserviceimpl;
+
     @Test
-    public void createTest() throws Exception{
-        jdbcTemplate.update("INSERT INTO inquiry (name, email, text) VALUES (?, ?, ?)", inquiry.getName(),
-                inquiry.getEmail(), inquiry.getText());
+    public final void entityTest(){
+        Inquiry inquiry1 = new Inquiry("daikinakamura","daaaa@gmail.com","〇〇のここがダメでした。");
+        inquiryserviceimpl.save(inquiry1);
+        Inquiry inquiry2 = new Inquiry("shotatashiro", "shoooo@gmail.com", "〇〇のここはどういう意味ですか？");
+        inquiryserviceimpl.save(inquiry2);
+        String name1 = inquiry1.getName();
+        assertEquals("daikinakamura", name1);
+        String name2 = inquiry2.getName();
+        assertEquals("shotatashiro", name2);
     }
 }
