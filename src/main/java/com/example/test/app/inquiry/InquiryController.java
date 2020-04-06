@@ -42,7 +42,7 @@ public class InquiryController {
     @PostMapping("/save")
     public String save(@Validated InquiryForm inquiryForm, BindingResult result) {
     if (result.hasErrors()) {
-      
+    
     }
     Inquiry inquiry = new Inquiry(inquiryForm.getName(), inquiryForm.getEmail(),inquiryForm.getText());
     service.save(inquiry);

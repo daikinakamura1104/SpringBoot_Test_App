@@ -13,7 +13,7 @@ public class Inquiry {
     private String name;
     private String email;
     private String text;
-   
+
     public Inquiry(String name, String email, String text) {
         this.setName(name);
         this.setEmail(email);

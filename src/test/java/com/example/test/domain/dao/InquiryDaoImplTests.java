@@ -18,10 +18,12 @@ public class InquiryDaoImplTests {
 
     @Test
     public final void entityTest(){
+        // entityファイル、データベースへの接続確認
         Inquiry inquiry1 = new Inquiry("daikinakamura","daaaa@gmail.com","〇〇のここがダメでした。");
         inquiryserviceimpl.save(inquiry1);
         Inquiry inquiry2 = new Inquiry("shotatashiro", "shoooo@gmail.com", "〇〇のここはどういう意味ですか？");
         inquiryserviceimpl.save(inquiry2);
+        // entityファイル、セッターとゲッターの確認
         String name1 = inquiry1.getName();
         assertEquals("daikinakamura", name1);
         String name2 = inquiry2.getName();

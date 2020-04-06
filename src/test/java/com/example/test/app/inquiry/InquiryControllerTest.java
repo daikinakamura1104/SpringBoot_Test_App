@@ -12,7 +12,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-
+// ユニットテスト、コントローラーでのパス要求ごとのページ遷移
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
 public class InquiryControllerTest{
