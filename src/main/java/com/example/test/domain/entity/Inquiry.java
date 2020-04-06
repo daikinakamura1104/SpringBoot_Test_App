@@ -7,6 +7,7 @@ import javax.persistence.Id;
 
 // @Table(name="")で定義するが、省略する場合はクラス名がテーブルの名前になる
 // Bean
+// DTO、データを格納するフィールド群とそれらへのアクセスメソッド(GetterとSetter)
 public class Inquiry {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -48,4 +49,4 @@ public class Inquiry {
         this.text = text;
     }
 
-  }
+    }

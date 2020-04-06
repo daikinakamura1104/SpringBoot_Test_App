@@ -78,7 +78,7 @@ public class InquiryControllerTest{
                     .param("email", "daaaa@gmail.com")
                     .param("text", "〇〇は異常がありました。"))
                     .andExpect(status().isOk())
-                    .andExpect(view().name("list"));            
+                    .andExpect(view().name("list"));
     }
 
     @Test

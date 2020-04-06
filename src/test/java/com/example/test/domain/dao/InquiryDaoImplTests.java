@@ -9,10 +9,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+
+// 結合テスト、データベースへの値保存確認。entity、daoファイルの動作確認。
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
 public class InquiryDaoImplTests {
 
+    // オブジェクト化
     @Autowired
     private InquiryServiceImpl inquiryserviceimpl;
 
