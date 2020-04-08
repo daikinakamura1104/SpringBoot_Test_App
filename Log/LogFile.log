@@ -1,166 +1,208 @@
-2020-04-07 10:34:25.221  INFO 1509 --- [restartedMain] com.example.test.DemoApplication         : Starting DemoApplication on nakamurikinoAir with PID 1509 (/Users/nakamuradaiki/SpringBoot_Test_App/target/classes started by nakamuradaiki in /Users/nakamuradaiki/SpringBoot_Test_App)
-2020-04-07 10:34:25.235  INFO 1509 --- [restartedMain] com.example.test.DemoApplication         : No active profile set, falling back to default profiles: default
-2020-04-07 10:34:25.329  INFO 1509 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
-2020-04-07 10:34:25.332  INFO 1509 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-04-07 10:34:25.353  INFO 1509 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-04-07 10:34:26.680  INFO 1509 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-04-07 10:34:26.726  INFO 1509 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25ms. Found 0 JPA repository interfaces.
-2020-04-07 10:34:27.886  INFO 1509 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-04-07 10:34:27.902  INFO 1509 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-04-07 10:34:27.903  INFO 1509 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
-2020-04-07 10:34:28.047  INFO 1509 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-04-07 10:34:28.055 DEBUG 1509 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2020-04-07 10:34:28.056  INFO 1509 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2700 ms
-2020-04-07 10:34:28.143  INFO 1509 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-04-07 10:34:28.500  INFO 1509 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-04-07 10:34:28.511  INFO 1509 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/test'
-2020-04-07 10:34:29.695  INFO 1509 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-04-07 10:34:29.744  INFO 1509 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-04-07 10:34:29.915  WARN 1509 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-04-07 10:34:30.125  INFO 1509 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-04-07 10:34:30.138 DEBUG 1509 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2020-04-07 10:34:30.211 DEBUG 1509 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
-2020-04-07 10:34:30.219  INFO 1509 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2020-04-07 10:34:30.263 DEBUG 1509 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2020-04-07 10:34:30.282 DEBUG 1509 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2020-04-07 10:34:30.473  INFO 1509 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-04-07 10:34:30.478  INFO 1509 --- [restartedMain] com.example.test.DemoApplication         : Started DemoApplication in 5.836 seconds (JVM running for 7.157)
-2020-04-07 10:34:39.048  INFO 1509 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-04-07 10:34:39.049  INFO 1509 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-04-07 10:34:39.050 DEBUG 1509 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2020-04-07 10:34:39.067 DEBUG 1509 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2020-04-07 10:34:39.068  INFO 1509 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
-2020-04-07 10:34:39.087 DEBUG 1509 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
-2020-04-07 10:34:39.299 DEBUG 1509 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2020-04-07 10:34:39.832 DEBUG 1509 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2020-04-07 10:34:39.915 DEBUG 1509 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/css/admin/style.css", parameters={}
-2020-04-07 10:34:39.918 DEBUG 1509 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-2020-04-07 10:34:39.944 DEBUG 1509 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2020-04-07 10:34:40.750 DEBUG 1509 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
-2020-04-07 10:34:40.751 DEBUG 1509 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-2020-04-07 10:34:40.755 DEBUG 1509 --- [http-nio-8080-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2020-04-07 10:34:40.755 DEBUG 1509 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2020-04-07 10:34:40.774 DEBUG 1509 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
-2020-04-07 10:34:40.779 DEBUG 1509 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
-2020-04-07 10:34:40.825 DEBUG 1509 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/webp, image/apng, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
-2020-04-07 10:34:40.827 DEBUG 1509 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Tue Apr 07 10:34:40 JST 2020, status=404, error=Not Found, message=No message available,  (truncated)...]
-2020-04-07 10:34:40.887 DEBUG 1509 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2020-04-07 10:35:03.941 DEBUG 1509 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/inquiry/confirm", parameters={masked}
-2020-04-07 10:35:03.943 DEBUG 1509 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.test.app.inquiry.InquiryController#confirm(String, String, String, Model)
-2020-04-07 10:35:03.989 DEBUG 1509 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2020-04-07 10:35:04.005 DEBUG 1509 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2020-04-07 10:35:04.048 DEBUG 1509 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/css/admin/style.css", parameters={}
-2020-04-07 10:35:04.050 DEBUG 1509 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-2020-04-07 10:35:04.055 DEBUG 1509 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2020-04-07 10:35:35.238 DEBUG 1509 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/inquiry/confirm", parameters={masked}
-2020-04-07 10:35:35.241 DEBUG 1509 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.test.app.inquiry.InquiryController#confirm(String, String, String, Model)
-2020-04-07 10:35:35.245 DEBUG 1509 --- [http-nio-8080-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2020-04-07 10:35:35.258 DEBUG 1509 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2020-04-07 10:35:35.292 DEBUG 1509 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/css/admin/style.css", parameters={}
-2020-04-07 10:35:35.295 DEBUG 1509 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-2020-04-07 10:35:35.301 DEBUG 1509 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2020-04-07 10:35:36.470 DEBUG 1509 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/inquiry/save", parameters={masked}
-2020-04-07 10:35:36.472 DEBUG 1509 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.test.app.inquiry.InquiryController#save(InquiryForm, BindingResult)
-2020-04-07 10:35:36.566 DEBUG 1509 --- [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2020-04-07 10:35:36.570 DEBUG 1509 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2020-04-07 10:35:36.607 DEBUG 1509 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/css/admin/style.css", parameters={}
-2020-04-07 10:35:36.608 DEBUG 1509 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-2020-04-07 10:35:36.611 DEBUG 1509 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2020-04-07 10:35:37.786 DEBUG 1509 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/inquiry/list", parameters={}
-2020-04-07 10:35:37.787 DEBUG 1509 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.test.app.inquiry.InquiryController#list(Model)
-2020-04-07 10:35:37.799 DEBUG 1509 --- [http-nio-8080-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2020-04-07 10:35:37.829 DEBUG 1509 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2020-04-07 10:35:37.876 DEBUG 1509 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/css/admin/style.css", parameters={}
-2020-04-07 10:35:37.878 DEBUG 1509 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-2020-04-07 10:35:37.882 DEBUG 1509 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2020-04-07 10:35:50.641 DEBUG 1509 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/inquiry", parameters={}
-2020-04-07 10:35:50.643 DEBUG 1509 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.test.app.inquiry.InquiryController#form()
-2020-04-07 10:35:50.645 DEBUG 1509 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2020-04-07 10:35:50.656 DEBUG 1509 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2020-04-07 10:35:50.693 DEBUG 1509 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/css/admin/style.css", parameters={}
-2020-04-07 10:35:50.694 DEBUG 1509 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-2020-04-07 10:35:50.698 DEBUG 1509 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2020-04-07 10:35:54.058 DEBUG 1509 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/inqui", parameters={}
-2020-04-07 10:35:54.062 DEBUG 1509 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-2020-04-07 10:35:54.064 DEBUG 1509 --- [http-nio-8080-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2020-04-07 10:35:54.065 DEBUG 1509 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2020-04-07 10:35:54.066 DEBUG 1509 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
-2020-04-07 10:35:54.069 DEBUG 1509 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
-2020-04-07 10:35:54.079 DEBUG 1509 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
-2020-04-07 10:35:54.093 DEBUG 1509 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2020-04-07 10:35:54.133 DEBUG 1509 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/admin/style.css", parameters={}
-2020-04-07 10:35:54.134 DEBUG 1509 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-2020-04-07 10:35:54.140 DEBUG 1509 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2020-04-07 10:35:55.889 DEBUG 1509 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
-2020-04-07 10:35:55.892 DEBUG 1509 --- [http-nio-8080-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2020-04-07 10:35:55.899 DEBUG 1509 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2020-04-07 10:35:55.929 DEBUG 1509 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/css/admin/style.css", parameters={}
-2020-04-07 10:35:55.930 DEBUG 1509 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-2020-04-07 10:35:55.934 DEBUG 1509 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2020-04-07 10:36:13.903  INFO 1509 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-04-07 10:36:13.905  INFO 1509 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-04-07 10:36:13.922  INFO 1509 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2020-04-07 10:36:13.928  INFO 1509 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2020-04-07 10:59:57.838  INFO 1963 --- [restartedMain] com.example.test.DemoApplication         : Starting DemoApplication on nakamurikinoAir with PID 1963 (/Users/nakamuradaiki/SpringBoot_Test_App/target/classes started by nakamuradaiki in /Users/nakamuradaiki/SpringBoot_Test_App)
-2020-04-07 10:59:57.846  INFO 1963 --- [restartedMain] com.example.test.DemoApplication         : No active profile set, falling back to default profiles: default
-2020-04-07 10:59:57.939  INFO 1963 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
-2020-04-07 10:59:57.944  INFO 1963 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2020-04-07 10:59:57.944  INFO 1963 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2020-04-07 10:59:59.177  INFO 1963 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-04-07 10:59:59.236  INFO 1963 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 0 JPA repository interfaces.
-2020-04-07 11:00:00.674  INFO 1963 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-04-07 11:00:00.688  INFO 1963 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-04-07 11:00:00.689  INFO 1963 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
-2020-04-07 11:00:00.859  INFO 1963 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-04-07 11:00:00.862 DEBUG 1963 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2020-04-07 11:00:00.862  INFO 1963 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2917 ms
-2020-04-07 11:00:00.926  INFO 1963 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-04-07 11:00:01.251  INFO 1963 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-04-07 11:00:01.262  INFO 1963 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/test'
-2020-04-07 11:00:02.277  INFO 1963 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-04-07 11:00:02.325  INFO 1963 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2020-04-07 11:00:02.459  WARN 1963 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-04-07 11:00:02.657  INFO 1963 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-04-07 11:00:02.670 DEBUG 1963 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2020-04-07 11:00:02.740 DEBUG 1963 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
-2020-04-07 11:00:02.749  INFO 1963 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2020-04-07 11:00:02.812 DEBUG 1963 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2020-04-07 11:00:02.828 DEBUG 1963 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2020-04-07 11:00:03.036  INFO 1963 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-04-07 11:00:03.041  INFO 1963 --- [restartedMain] com.example.test.DemoApplication         : Started DemoApplication in 6.114 seconds (JVM running for 7.665)
-2020-04-07 11:00:12.230  INFO 1963 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-04-07 11:00:12.231  INFO 1963 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-04-07 11:00:12.231 DEBUG 1963 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2020-04-07 11:00:12.243 DEBUG 1963 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2020-04-07 11:00:12.244  INFO 1963 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
-2020-04-07 11:00:12.261 DEBUG 1963 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
-2020-04-07 11:00:12.418 DEBUG 1963 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2020-04-07 11:00:12.902 DEBUG 1963 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2020-04-07 11:00:12.969 DEBUG 1963 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/css/admin/style.css", parameters={}
-2020-04-07 11:00:12.980 DEBUG 1963 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-2020-04-07 11:00:13.023 DEBUG 1963 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2020-04-07 11:00:42.152 DEBUG 1963 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/inquiry/confirm", parameters={masked}
-2020-04-07 11:00:42.154 DEBUG 1963 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.test.app.inquiry.InquiryController#confirm(String, String, String, Model)
-2020-04-07 11:00:42.199 DEBUG 1963 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2020-04-07 11:00:42.216 DEBUG 1963 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2020-04-07 11:00:42.246 DEBUG 1963 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/css/admin/style.css", parameters={}
-2020-04-07 11:00:42.248 DEBUG 1963 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-2020-04-07 11:00:42.251 DEBUG 1963 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2020-04-07 11:00:43.451 DEBUG 1963 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/inquiry/save", parameters={masked}
-2020-04-07 11:00:43.452 DEBUG 1963 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.test.app.inquiry.InquiryController#save(InquiryForm, BindingResult)
-2020-04-07 11:00:43.532 DEBUG 1963 --- [http-nio-8080-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2020-04-07 11:00:43.538 DEBUG 1963 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2020-04-07 11:00:43.570 DEBUG 1963 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/css/admin/style.css", parameters={}
-2020-04-07 11:00:43.571 DEBUG 1963 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-2020-04-07 11:00:43.573 DEBUG 1963 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2020-04-07 11:00:44.568 DEBUG 1963 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/inquiry/list", parameters={}
-2020-04-07 11:00:44.570 DEBUG 1963 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.test.app.inquiry.InquiryController#list(Model)
-2020-04-07 11:00:44.579 DEBUG 1963 --- [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
-2020-04-07 11:00:44.593 DEBUG 1963 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2020-04-07 11:00:44.642 DEBUG 1963 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/css/admin/style.css", parameters={}
-2020-04-07 11:00:44.643 DEBUG 1963 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-2020-04-07 11:00:44.647 DEBUG 1963 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
-2020-04-07 11:34:14.207  INFO 1963 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
-2020-04-07 11:34:14.209  INFO 1963 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2020-04-07 11:34:14.227  INFO 1963 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2020-04-07 11:34:14.235  INFO 1963 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-08 10:18:29.455  INFO 3107 --- [restartedMain] com.example.test.DemoApplication         : Starting DemoApplication on nakamurikinoAir with PID 3107 (/Users/nakamuradaiki/SpringBoot_Test_App/target/classes started by nakamuradaiki in /Users/nakamuradaiki/SpringBoot_Test_App)
+2020-04-08 10:18:29.473  INFO 3107 --- [restartedMain] com.example.test.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-04-08 10:18:29.811  INFO 3107 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-04-08 10:18:29.815  INFO 3107 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-08 10:18:29.822  INFO 3107 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-08 10:18:31.462  INFO 3107 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-08 10:18:31.499  INFO 3107 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 JPA repository interfaces.
+2020-04-08 10:18:32.776  INFO 3107 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-08 10:18:32.797  INFO 3107 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-08 10:18:32.798  INFO 3107 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-08 10:18:32.981  INFO 3107 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-08 10:18:32.985 DEBUG 3107 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-08 10:18:32.987  INFO 3107 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3163 ms
+2020-04-08 10:18:33.065  INFO 3107 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-08 10:18:33.593  INFO 3107 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-08 10:18:33.612  INFO 3107 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/test'
+2020-04-08 10:18:36.249  INFO 3107 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-08 10:18:36.396  INFO 3107 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-08 10:18:36.626  WARN 3107 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-08 10:18:37.019  INFO 3107 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-08 10:18:37.034 DEBUG 3107 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-08 10:18:37.179 DEBUG 3107 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2020-04-08 10:18:37.264  INFO 3107 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-08 10:18:37.611 DEBUG 3107 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-08 10:18:37.656 DEBUG 3107 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-08 10:18:38.564  INFO 3107 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-08 10:18:38.574  INFO 3107 --- [restartedMain] com.example.test.DemoApplication         : Started DemoApplication in 9.936 seconds (JVM running for 11.737)
+2020-04-08 10:19:34.053  INFO 3107 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-08 10:19:34.055  INFO 3107 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-08 10:19:34.056 DEBUG 3107 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-04-08 10:19:34.094 DEBUG 3107 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-08 10:19:34.094  INFO 3107 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 39 ms
+2020-04-08 10:19:34.119 DEBUG 3107 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2020-04-08 10:19:34.330 DEBUG 3107 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-04-08 10:19:34.818 DEBUG 3107 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-04-08 10:19:34.895 DEBUG 3107 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/css/admin/style.css", parameters={}
+2020-04-08 10:19:34.898 DEBUG 3107 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-08 10:19:34.918 DEBUG 3107 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-04-08 10:19:35.506 DEBUG 3107 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2020-04-08 10:19:35.507 DEBUG 3107 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-08 10:19:35.515 DEBUG 3107 --- [http-nio-8080-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2020-04-08 10:19:35.516 DEBUG 3107 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2020-04-08 10:19:35.528 DEBUG 3107 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2020-04-08 10:19:35.531 DEBUG 3107 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2020-04-08 10:19:35.580 DEBUG 3107 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/webp, image/apng, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2020-04-08 10:19:35.582 DEBUG 3107 --- [http-nio-8080-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Wed Apr 08 10:19:35 JST 2020, status=404, error=Not Found, message=No message available,  (truncated)...]
+2020-04-08 10:19:35.671 DEBUG 3107 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2020-04-08 10:20:21.874 DEBUG 3107 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/inquiry/confirm", parameters={masked}
+2020-04-08 10:20:21.877 DEBUG 3107 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.test.app.inquiry.InquiryController#confirm(String, String, String, Model)
+2020-04-08 10:20:21.906 DEBUG 3107 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-04-08 10:20:21.923 DEBUG 3107 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-04-08 10:20:21.971 DEBUG 3107 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/css/admin/style.css", parameters={}
+2020-04-08 10:20:21.972 DEBUG 3107 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-08 10:20:21.980 DEBUG 3107 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-04-08 10:20:23.210 DEBUG 3107 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/inquiry/save", parameters={masked}
+2020-04-08 10:20:23.211 DEBUG 3107 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.test.app.inquiry.InquiryController#save(InquiryForm, BindingResult)
+2020-04-08 10:20:23.303 DEBUG 3107 --- [http-nio-8080-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-04-08 10:20:23.308 DEBUG 3107 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-04-08 10:20:23.356 DEBUG 3107 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/css/admin/style.css", parameters={}
+2020-04-08 10:20:23.358 DEBUG 3107 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-08 10:20:23.361 DEBUG 3107 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-04-08 10:20:24.448 DEBUG 3107 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/inquiry/list", parameters={}
+2020-04-08 10:20:24.449 DEBUG 3107 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.test.app.inquiry.InquiryController#list(Model)
+2020-04-08 10:20:24.460 DEBUG 3107 --- [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-04-08 10:20:24.474 DEBUG 3107 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-04-08 10:20:24.523 DEBUG 3107 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/css/admin/style.css", parameters={}
+2020-04-08 10:20:24.524 DEBUG 3107 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-08 10:20:24.527 DEBUG 3107 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-04-08 10:20:43.935 DEBUG 3107 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/inquiry", parameters={}
+2020-04-08 10:20:43.936 DEBUG 3107 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.test.app.inquiry.InquiryController#form()
+2020-04-08 10:20:43.939 DEBUG 3107 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-04-08 10:20:43.947 DEBUG 3107 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-04-08 10:20:43.973 DEBUG 3107 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/css/admin/style.css", parameters={}
+2020-04-08 10:20:43.974 DEBUG 3107 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-08 10:20:43.978 DEBUG 3107 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-04-08 10:21:26.542  INFO 3107 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-08 10:21:26.544  INFO 3107 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-08 10:21:26.559  INFO 3107 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-08 10:21:26.568  INFO 3107 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-08 11:09:45.737  INFO 3618 --- [restartedMain] com.example.test.DemoApplication         : Starting DemoApplication on nakamurikinoAir with PID 3618 (/Users/nakamuradaiki/SpringBoot_Test_App/target/classes started by nakamuradaiki in /Users/nakamuradaiki/SpringBoot_Test_App)
+2020-04-08 11:09:45.744  INFO 3618 --- [restartedMain] com.example.test.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-04-08 11:09:45.841  INFO 3618 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-04-08 11:09:45.845  INFO 3618 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-08 11:09:45.846  INFO 3618 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-08 11:09:47.157  INFO 3618 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-08 11:09:47.190  INFO 3618 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 0 JPA repository interfaces.
+2020-04-08 11:09:48.194  INFO 3618 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-08 11:09:48.209  INFO 3618 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-08 11:09:48.210  INFO 3618 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-08 11:09:48.377  INFO 3618 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-08 11:09:48.377 DEBUG 3618 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-08 11:09:48.378  INFO 3618 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2529 ms
+2020-04-08 11:09:48.456  INFO 3618 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-08 11:09:48.796  INFO 3618 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-08 11:09:48.808  INFO 3618 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/test'
+2020-04-08 11:09:50.162  INFO 3618 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-08 11:09:50.214  INFO 3618 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-08 11:09:50.405  WARN 3618 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-08 11:09:50.671  INFO 3618 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-08 11:09:50.683 DEBUG 3618 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-08 11:09:50.779 DEBUG 3618 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2020-04-08 11:09:50.790  INFO 3618 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-08 11:09:50.853 DEBUG 3618 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-08 11:09:50.869 DEBUG 3618 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-08 11:09:51.098  INFO 3618 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-08 11:09:51.106  INFO 3618 --- [restartedMain] com.example.test.DemoApplication         : Started DemoApplication in 5.902 seconds (JVM running for 6.906)
+2020-04-08 11:14:01.810  INFO 3618 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-08 11:14:01.822  INFO 3618 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-08 11:14:01.838  INFO 3618 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-08 11:14:01.843  INFO 3618 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-04-08 11:14:16.563  INFO 3682 --- [restartedMain] com.example.test.DemoApplication         : Starting DemoApplication on nakamurikinoAir with PID 3682 (/Users/nakamuradaiki/SpringBoot_Test_App/target/classes started by nakamuradaiki in /Users/nakamuradaiki/SpringBoot_Test_App)
+2020-04-08 11:14:16.572  INFO 3682 --- [restartedMain] com.example.test.DemoApplication         : No active profile set, falling back to default profiles: default
+2020-04-08 11:14:16.665  INFO 3682 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/Users/nakamuradaiki/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2020-04-08 11:14:16.666  INFO 3682 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-04-08 11:14:16.667  INFO 3682 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-04-08 11:14:18.067  INFO 3682 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-04-08 11:14:18.105  INFO 3682 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23ms. Found 0 JPA repository interfaces.
+2020-04-08 11:14:19.089  INFO 3682 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-04-08 11:14:19.104  INFO 3682 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-08 11:14:19.106  INFO 3682 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2020-04-08 11:14:19.356  INFO 3682 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-08 11:14:19.356 DEBUG 3682 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-08 11:14:19.357  INFO 3682 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2689 ms
+2020-04-08 11:14:19.441  INFO 3682 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-04-08 11:14:19.864  INFO 3682 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-04-08 11:14:19.877  INFO 3682 --- [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/test'
+2020-04-08 11:14:21.112  INFO 3682 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-08 11:14:21.176  INFO 3682 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-04-08 11:14:21.408  WARN 3682 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-04-08 11:14:21.636  INFO 3682 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-08 11:14:21.650 DEBUG 3682 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-08 11:14:21.724 DEBUG 3682 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 6 mappings in 'requestMappingHandlerMapping'
+2020-04-08 11:14:21.731  INFO 3682 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-04-08 11:14:21.797 DEBUG 3682 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-08 11:14:21.814 DEBUG 3682 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-08 11:14:22.038  INFO 3682 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-08 11:14:22.042  INFO 3682 --- [restartedMain] com.example.test.DemoApplication         : Started DemoApplication in 5.987 seconds (JVM running for 7.09)
+2020-04-08 11:14:54.431  INFO 3682 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-04-08 11:14:54.432  INFO 3682 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-04-08 11:14:54.433 DEBUG 3682 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2020-04-08 11:14:54.455 DEBUG 3682 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2020-04-08 11:14:54.455  INFO 3682 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+2020-04-08 11:14:54.471 DEBUG 3682 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2020-04-08 11:14:54.659 DEBUG 3682 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-04-08 11:14:55.080 DEBUG 3682 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-04-08 11:14:55.168 DEBUG 3682 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/css/admin/style.css", parameters={}
+2020-04-08 11:14:55.171 DEBUG 3682 --- [http-nio-8080-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-08 11:14:55.192 DEBUG 3682 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-04-08 11:15:36.576 DEBUG 3682 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/inquiry/confirm", parameters={masked}
+2020-04-08 11:15:36.578 DEBUG 3682 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.test.app.inquiry.InquiryController#confirm(String, String, String, Model)
+2020-04-08 11:15:36.644 DEBUG 3682 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-04-08 11:15:36.666 DEBUG 3682 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-04-08 11:15:36.717 DEBUG 3682 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/css/admin/style.css", parameters={}
+2020-04-08 11:15:36.719 DEBUG 3682 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-08 11:15:36.723 DEBUG 3682 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-04-08 11:15:37.657 DEBUG 3682 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/inquiry/save", parameters={masked}
+2020-04-08 11:15:37.658 DEBUG 3682 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.test.app.inquiry.InquiryController#save(InquiryForm, BindingResult)
+2020-04-08 11:15:37.748 DEBUG 3682 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-04-08 11:15:37.753 DEBUG 3682 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-04-08 11:15:37.793 DEBUG 3682 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/admin/style.css", parameters={}
+2020-04-08 11:15:37.794 DEBUG 3682 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-08 11:15:37.797 DEBUG 3682 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-04-08 11:15:39.256 DEBUG 3682 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/inquiry/list", parameters={}
+2020-04-08 11:15:39.257 DEBUG 3682 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.test.app.inquiry.InquiryController#list(Model)
+2020-04-08 11:15:39.266 DEBUG 3682 --- [http-nio-8080-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-04-08 11:15:39.278 DEBUG 3682 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-04-08 11:15:39.318 DEBUG 3682 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/css/admin/style.css", parameters={}
+2020-04-08 11:15:39.319 DEBUG 3682 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-08 11:15:39.323 DEBUG 3682 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-04-08 11:15:46.724 DEBUG 3682 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/inquiry", parameters={}
+2020-04-08 11:15:46.724 DEBUG 3682 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.test.app.inquiry.InquiryController#form()
+2020-04-08 11:15:46.727 DEBUG 3682 --- [http-nio-8080-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-04-08 11:15:46.733 DEBUG 3682 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-04-08 11:15:46.775 DEBUG 3682 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/css/admin/style.css", parameters={}
+2020-04-08 11:15:46.776 DEBUG 3682 --- [http-nio-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-08 11:15:46.780 DEBUG 3682 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-04-08 11:16:58.458 DEBUG 3682 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/inquiry/confirm", parameters={masked}
+2020-04-08 11:16:58.460 DEBUG 3682 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.test.app.inquiry.InquiryController#confirm(String, String, String, Model)
+2020-04-08 11:16:58.463 DEBUG 3682 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-04-08 11:16:58.476 DEBUG 3682 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-04-08 11:16:58.511 DEBUG 3682 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/css/admin/style.css", parameters={}
+2020-04-08 11:16:58.512 DEBUG 3682 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-08 11:16:58.517 DEBUG 3682 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-04-08 11:16:59.624 DEBUG 3682 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/inquiry/save", parameters={masked}
+2020-04-08 11:16:59.624 DEBUG 3682 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.test.app.inquiry.InquiryController#save(InquiryForm, BindingResult)
+2020-04-08 11:16:59.629 DEBUG 3682 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-04-08 11:16:59.635 DEBUG 3682 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-04-08 11:16:59.676 DEBUG 3682 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/css/admin/style.css", parameters={}
+2020-04-08 11:16:59.677 DEBUG 3682 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-08 11:16:59.679 DEBUG 3682 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-04-08 11:17:00.684 DEBUG 3682 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/inquiry/list", parameters={}
+2020-04-08 11:17:00.684 DEBUG 3682 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.test.app.inquiry.InquiryController#list(Model)
+2020-04-08 11:17:00.687 DEBUG 3682 --- [http-nio-8080-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-04-08 11:17:00.703 DEBUG 3682 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-04-08 11:17:00.735 DEBUG 3682 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/css/admin/style.css", parameters={}
+2020-04-08 11:17:00.736 DEBUG 3682 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-08 11:17:00.742 DEBUG 3682 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-04-08 11:17:02.054 DEBUG 3682 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/inquiry", parameters={}
+2020-04-08 11:17:02.055 DEBUG 3682 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.test.app.inquiry.InquiryController#form()
+2020-04-08 11:17:02.058 DEBUG 3682 --- [http-nio-8080-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2020-04-08 11:17:02.069 DEBUG 3682 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-04-08 11:17:02.107 DEBUG 3682 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/css/admin/style.css", parameters={}
+2020-04-08 11:17:02.109 DEBUG 3682 --- [http-nio-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2020-04-08 11:17:02.111 DEBUG 3682 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2020-04-08 11:17:04.939  INFO 3682 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-08 11:17:04.940  INFO 3682 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-08 11:17:04.959  INFO 3682 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-04-08 11:17:04.964  INFO 3682 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -37,10 +37,6 @@ public class InquiryForm {
     public void setText(String text){
         this.text = text;
     }
-
-    public InquiryForm() {
-      this("", "", "");
-    }
    
 }
   
