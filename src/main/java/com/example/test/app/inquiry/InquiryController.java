@@ -55,7 +55,8 @@ public class InquiryController {
     @GetMapping("/list")
     public String list(Model model){
         List<Map<String,Object>> list;
-        list = jdbcTemplate.queryForList("select * from inquiry");
+        // テスト用データ以外を取得する。
+        list = jdbcTemplate.queryForList("select * from inquiry where name != 'daikinakamura' and name != 'shotatashiro'");
         model.addAttribute("list", list);
         return "list";
     }
